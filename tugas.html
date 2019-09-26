@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>L200170077</title>
+	<style>
+	body {background:#aaa;}
+	h1 {margin:0; font-size:23px;}
+	h2 {margin:0; font-size:27px;}
+	p {text-align:justify;}
+	a {text-decoration:none;}
+	#wrap {background:#87CEEB;width:1000px;margin:auto;overflow:hidden;}
+	#header {background:#FFFFFF;width:1000px;heigh:150px;}
+	#menu {width;1000px;heigh:50px;background:#rfa072;}
+	#menu ul {padding:0;margin:0;} 
+	#menu ul li {display:inline;margin-left:10px;line-heigh:50px;font-size:20px;border:1px solid #eee;padding:5px 15px;border-radius:10px;background:#DB7093;}
+	#menu ul li:hover {background:#4682B4;}
+	#menu ul li a{color:#FFFFFF;}
+	#content {width:1000px;overflow:hidden;}
+	#kiri {width:680px;float:left;padding:10px;}
+	#kiri img{float:left;margin:15px;}
+	#kanan {width:300px;height:500px;float:left:}
+	
+	</style>
+	<body>
+	
+		
+				
+			</table>
+		</div>
+		<div id="wrap">
+			<div id="header">
+			
+				<img src="informatika.jpg" width="1000px" height="200px" />
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="">Tugas</a></li>
+			</ul>
+			
+		</div>
+		<div id="kiri">
+			     <div id="kiri">
+				     <h2> CONTOH PERINTAH MYSQL </h2>
+			        <p><h3>DDL</h3> Data defenition language atau DDL adalah yang paling dasar dalam membangun sebuah database, karena  pada bagian ini lah sebuah database dibangun dari nol. 
+					Data defenition language atau DDL digunakan untuk kepentingan penciptaan database,tabe hingga penghapusan tabel dan database tersebut. 
+					Saya lebih suka mengartikan DDL sebagai  membangun kerangka database atau mendefenisikan database.
+					Tentunya DDL tidaklah sebuah perintah, DDL merupakan nama pengelompokan dari beberapa perintah yang fungsinya membangun database. Dan dibawah ini merupakan bagian atau perintah-perintah yang ada dalam DDL.
+			
+					</p>
+			<P>A.DROP DATABASE<br>perintah ini adalah kebalikan dari create database, yaitu untuk menghapus sebuah database yang diinginkan.
+			<br>Syntax:<br>
+				drop database pusing_ngoding;
+			<P>B.DROP DATABASE<br>perintah ini adalah kebalikan dari create database, yaitu untuk menghapus sebuah database yang diinginkan.
+			<br>Syntax:;<br>drop database pusing_ngoding;
+			<P>C.CREATE TABLE<br>Perintah ini adalah untuk membuat sebuah table, dimana saat kita membuat table, kita juga harus langsung membuat struktur tabel tersebut, mulai dari tipe data, name_field, long, dll.
+			<br>Syntax:<br>create table tb_mhs(nim varchar(13)not null primary key,nama varchar(25),tgl_lahir date,sex enum('P','W'),alamat varchar(50),kota varchar(20));
+			<P>D.DROP TABLE<br>Perintah ini untuk menghapus tabel dari sebuah database sesuai yang kita inginkan.<br>Syntax:<br>drop table tb_mhs;
+			<P>E.ALTER TABLE<br>Perintah ini berfungsi untuk mengubah struktur dari sebuah tabel, atau mengedit struktur table.<br>
+			Syntax:<br>alter table tb_mhs change alamat tempat_tinggal varchar(40);
+			<br><br>
+					<p><h3>DML</h3>DML atau data manupulation language bila dilihat atau diartikan dari ketiga kata itu saja kita sudah bisa mengerti artinya atau maksudnya, yaitu untuk Memanipulasi Data yang ada didalam database, DML bisa dijalankan apabila DDL sudah dilakukan terlebih dahulu. 
+					Pada bagian inilah kita mengedit, menambah, menghapus data dan lain sebagainya. Sama halnya dengan DDL, DML juga memiliki beberapa perintah, simak dan perhatikan perintah yang terdapat pada DML seperti dibawah ini
+					</p>
+			<p>A.INSERT<br>Perintah ini sudah menjadi perintah yang paling sering didengar, yaitu untuk memasukkan atau 
+			mengentri atau juga menyisipkan data kedalam tabel yang ada didalam database.<br>Syntax:<br>insert into tb_mhs set nim='1610031802118', nama='yesaya twin situmorang', j_kelamin='L', 
+			gl_lahir='1997-08-06',alamat='jl. Uka- Garuda sakti km,3',kota='pekanbaru';
+			<p>B.UPDATE<br>Perintah ini berguna untuk mengubah dari pada isi tabel tertentu sesuai keinginan.<br>Syntax:<br>
+			update tb_mhs set nama='Twin Situmorang', sex='P' where nim='1610031802118';<br>
+			<p>C.DELETE<br>Perintah ini berguna untuk menghapus data didalam tabel dengan menghapus satu baris langsung.<br>
+			Syntax:<br>delete from tb_mhs where nim='1610031802118';<br>
+			<p>D.SELECT<br>Perintah ini berguna untuk memilih atau mengambil data dari sebuah tabel didalam database<br>Syntax:<br>
+			select nama from tb_mhs where nim=’1610031802118’;
+			Select * from tb_mhs order by nama asc;
+			SELECT * FROM tb_mhs GROUP BY nama;
+			<br>
+			
+		        </div>
+			</div>
+			
+</head>
+</body>
+</html>
